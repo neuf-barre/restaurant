@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="jp" data-ng-app="neuf_barre">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Neuf Barre - ヌフバー</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-ng-controller="MainCtrl">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand page-scroll" href="#page-top">Neuf Barre - ヌフバー</a>
+                <a data-ng-click="setLocale('jp-JP')" href=""><img src="images/japan-icon.png" alt="JP" title="日本語" /></a>
+                <a data-ng-click="setLocale('fr-FR')" href=""><img src="images/france-icon.png" alt="FR" title="Français" /></a>
+                <a data-ng-click="setLocale('en-US');" href=""><img src="images/uk-icon.png" alt="EN" title="English" /></a>
+            </div>
+
+            <div>
+             
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about" data-i18n="common.about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#menu" data-i18n="common.menu">Menu</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#gallery" data-i18n="common.gallery">Galerie</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#access" data-i18n="common.access">Access</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact" data-i18n="common.contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                
+                <!--a href="#about" class="btn btn-primary btn-xl page-scroll">About</a-->
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading" data-i18n="common.about">About</h2>
+                    <hr class="light">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <p class="text-faded" data-i18n="common.about-description-line1">Un restaurant a ouvert depuis premier avril 2016.</p>
+                    <p class="text-faded" data-i18n="common.about-description-line2">Le restaurant s'appelle Neuf Barre.</p>
+                    <a href="#menu" class="page-scroll btn btn-default btn-xl sr-button">Voir le menu</a>
+                </div>
+                <!--div id="typed-intro-template" class="col-lg-6">
+                    <p data-i18n="common.typed-line-1">Cuisine japonaise</p>
+                    <p data-i18n="common.typed-line-2">Cuisine occidentale</p>
+                    <p data-i18n="common.typed-line-3">Espace détente</p>
+                </div-->
+                <div id="typed-intro" class="col-lg-4"></div>
+                <div id="weather" class="col-lg-4"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading" data-i18n="common.menu">Menu</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="menu-box">
+                        <i class="fa fa-4x fa-coffee text-primary sr-icons"></i>
+                        <h3 data-i18n="common.menu-breakfast-title">Sturdy Templates</h3>
+                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="menu-box">
+                        <i class="fa fa-4x fa-cutlery text-primary sr-icons"></i>
+                        <h3 data-i18n="common.menu-lunch-title">Ready to Ship</h3>
+                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="menu-box">
+                        <i class="fa fa-4x fa-beer text-primary sr-icons"></i>
+                        <h3 data-i18n="common.menu-diner-title">Up to Date</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="menu-box">
+                        <i class="fa fa-4x fa-glass text-primary sr-icons"></i>
+                        <h3 data-i18n="common.menu-drink-title">Made with Love</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading" data-i18n="common.gallery">Galerie</h2>
+                    <hr class="light">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid popup-gallery">
+            <!-- Ligne 1 -->
+            <div class="row no-gutter ">
+                <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_1.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_1.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_2.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_2.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_3.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_3.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_4.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_4.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+               <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_5.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_5.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+               <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_6.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_6.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ligne 1 -->
+            <div class="row no-gutter ">
+                <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_7.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_7.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_8.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_8.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_9.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_9.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_10.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_10.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+               <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_11.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_11.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+               <div class="col-lg-2 col-sm-2">
+                    <a href="img/portfolio/fullsize/neuf_barre_12.jpg" class="gallery-box">
+                     <img src="img/portfolio/thumbnails/neuf_barre_12.jpg" class="img-responsive" alt="">
+                     <div class="gallery-box-caption">
+                            <div class="gallery-box-caption-content">
+                                <div class="project-category text-faded">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="access" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading" data-i18n="common.access">Access</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container map">
+            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.8386720249723!2d139.71092753984382!3d35.63324952757486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x75f1a1bf3cdd09e3!2sNeuf+Barre!5e0!3m2!1sfr!2sjp!4v1466299555827"></iframe>
+            <br />
+            <small>
+                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.8386720249723!2d139.71092753984382!3d35.63324952757486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x75f1a1bf3cdd09e3!2sNeuf+Barre!5e0!3m2!1sfr!2sjp!4v1466299555827"></a>
+            </small>
+            </iframe>
+        </div>
+    </section>
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                
+                <hr class="primary">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <i class="fa fa-phone fa-3x sr-contact"></i>
+                        <p>03-3495-9788</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="fa fa-home fa-3x sr-contact"></i>
+                        <p data-i18n="common.access-address-line1">〒153-0064 - Tokyo</p>
+                        <p data-i18n="common.access-address-line2">2 Chome-21-28 Shimomeguro Meguro</p>
+                        <p class="text-muted"><span data-i18n="common.access-hours-label"></span><span data-i18n="common.access-hours-value"></span></p>
+                        <p class="text-muted"><span data-i18n="common.access-holidays-label"></span><span data-i18n="common.access-holidays-value"></span></p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                        <p><a href="mailto:neuf.barre@gmail.com">neuf.barre@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/Neuf-Barre-%E3%83%8C%E3%83%95%E3%83%90%E3%83%BC-1025144697539304/?fref=ts"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.imgrum.net/user/neuf_barre/2997403498"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-download fa-fw fa-3x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download business card</a-->
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading" data-i18n="common.contact">Formulaire de contact</h2>
+                    <hr class="light">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div id="contactFormDiv">
+                        <form id="contactForm" class="form">
+                            
+                            <p class="Name">
+                                <input id="name" name="name" text="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="{{ 'common.contact-name' | i18n }}"  />
+                            </p>
+
+                            <p class="email">
+                                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="{{ 'common.contact-email' | i18n }}" />
+                            </p>
+
+                            <p class="text">
+                            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="{{ 'common.contact-comment' | i18n }}"></textarea>
+                          </p>
+
+                          <div class="submit">
+                            <input type="submit" value="{{ 'common.contact-sendLabel' | i18n }}" id="button-blue"/>
+                            <div class="ease"></div>
+                          </div>
+
+                        </form>
+
+                    </div>
+
+                    
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+        <div class="row">
+            <div class="col-lg-8 text-center"></div>
+            <div class="col-lg-4 text-center">
+                <p>Copyright @ Neuf Barre 2016</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/angular/angular-cookies.js"></script>
+    <script src="js/angular/angular-sanitize.js"></script>
+    <script src="js/angular/angular-localization.js"></script>
+    
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/jquery.simpleWeather.js"></script>
+
+
+    <!-- Custom JavaScript -->
+    <script src="js/creative.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/neuf-barre.js"></script>
+
+</body>
+
+</html>
