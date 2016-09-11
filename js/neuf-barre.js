@@ -2,19 +2,20 @@ var app = angular.module('neuf_barre', ['ngRoute', 'ngLocalize']);
 
 function startTyped(values) {
 
-        $("#typed-intro").typed('reset');
-        
-        $("#typed-intro").typed({
-            strings: values,
-            // stringsElement: $('#typed-intro-template'),
-            typeSpeed: 50, // typing speed
-            backDelay: 500, // pause before backspacing
-            loop: true, // loop on or off (true or false)
-            loopCount: false, // number of loops, false = infinite
-            showCursor: true,
-            cursorChar: "_",
+    $("#typed-intro").typed('reset');
+	    
+	    $("#typed-intro").typed({
+	        strings: values,
+	        // stringsElement: $('#typed-intro-template'),
+	        typeSpeed: 150, // typing speed
+	        backDelay: 150, // pause before backspacing
+	        backSpeed: 75,
+	        loop: true, // loop on or off (true or false)
+	        loopCount: false, // number of loops, false = infinite
+	        showCursor: true,
+	        cursorChar: "_",
 
-        });
+	    });
     }
 
 
@@ -62,7 +63,7 @@ app.controller('MainCtrl', function ($scope, $location, locale) {
 		var typedValues = [line1, line2, line3];
 		
 		var typedValue = [];
-		typedValue['jp-JP'] = ["日本料理", "洋食", "元気ですか？"];
+		typedValue['jp-JP'] = ["おばんざい", "家庭料理", "多国籍料理"];
 	    typedValue['fr-FR'] = ["Cuisine JP", "Cuisine FR", "Espace"];
 	    typedValue['en-US'] = ["Japanese", "Western", "Espace"];
 
@@ -109,5 +110,32 @@ $(function(){
 
     console.log('JS Starting');
     // startTyped(jpValues);;
+
+    // caroussel
+	$('.frecchou').slick({
+		  centerMode: true,
+		  centerPadding: '170px',
+		  slidesToShow: 1,
+		  responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 1
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
+		});
   
 });

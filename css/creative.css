@@ -6,7 +6,6 @@
 
  @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
 html,
 body {
   height: 100%;
@@ -54,11 +53,16 @@ p {
   background-color: #222222;
   color: white;
 }
+.text-justify {
+    text-align: justify;
+}
+.text-center {
+  text-align: center;
+}
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
 }
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 aside {
   /* padding: 50px 0; */
@@ -611,7 +615,7 @@ input:focus, textarea:focus {
   /*width: 600px;
   height: 200px;*/
   color: white;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 /*
