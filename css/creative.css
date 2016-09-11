@@ -65,6 +65,9 @@ p {
   display: inline-block;
   padding-top: 10px;
 }
+.menu-button {
+  margin-top: 20px;
+}
 section {
   padding: 50px 0;
 }
