@@ -116,7 +116,7 @@ aside {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
-@media (min-width: 300px) {
+@media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.3);
