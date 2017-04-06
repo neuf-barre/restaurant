@@ -166,7 +166,8 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../images/banner.png');
+  background-image: url('../images/body-bg-paris.jpg');
+  /*background-color: #000;*/
   text-align: center;
   color: white;
 }
@@ -584,11 +585,11 @@ input:focus, textarea:focus {
   background-color: rgba(0,0,0,0);
   color: #0493bd;
 }
-  
+
 .submit:hover {
   color: #3498db;
 }
-  
+
 .ease {
   width: 0px;
   height: 74px;

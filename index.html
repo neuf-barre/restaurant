@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="jp" data-ng-app="neuf_barre">
+<html lang="jp" ng-app="neufbarre">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Neuf Barre - ヌフバー</title>
+    <title>Neuf barre</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -20,9 +20,8 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slick.css" type="text/css">
-    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="css/photoswipe.css" type="text/css">
+    <link rel="stylesheet" href="css/default-skin/default-skin.css" type="text/css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
@@ -36,7 +35,7 @@
 
 </head>
 
-<body id="page-top" data-ng-controller="MainCtrl">
+<body id="page-top" ng-controller="MainCtrl">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -48,36 +47,32 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
-                <a class="navbar-brand page-scroll" href="#page-top">Neuf Barre</a>
-                <div class="locales-flags">
-                    <a data-ng-click="setLocale('jp-JP')" href=""><img width="32" height="32" src="images/japan-icon.png" alt="JP" title="日本語" /></a>
-                    <a data-ng-click="setLocale('fr-FR')" href=""><img width="32" height="32" src="images/france-icon.png" alt="FR" title="Français" /></a>
-                    <a data-ng-click="setLocale('en-US');" href=""><img width="32" height="32" src="images/uk-icon.png" alt="EN" title="English" /></a>
-                </div>
-            </div>
 
-            <div>
-             
+                <a class="navbar-brand page-scroll" href="#page-top"><span translate="MENU_TITLE">Neuf Barre</span></a>
+                <div class="locales-flags">
+                    <a ng-click="changeLanguage('ja')" href=""><img width="32" height="32" src="images/flags/japanese-icon.png" alt="JP" title="日本語" /></a>
+                    <a ng-click="changeLanguage('fr')" href=""><img width="32" height="32" src="images/flags/french-icon.png" alt="FR" title="Français" /></a>
+                    <a ng-click="changeLanguage('en')" href=""><img width="32" height="32" src="images/flags/english-icon.png" alt="FR" title="English" /></a>
+                </div>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about" data-i18n="common.about">About</a>
+                        <a class="page-scroll" href="#about"><span translate="NAV_TITLE_ABOUT"></span></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#menu" data-i18n="common.menu">Menu</a>
+                        <a class="page-scroll" href="#menu"><span translate="NAV_TITLE_MENU"></span></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#gallery" data-i18n="common.gallery">Galerie</a>
+                        <a class="page-scroll" href="#gallery"><span translate="NAV_TITLE_GALLERY"></span></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#access" data-i18n="common.access">Access</a>
+                        <a class="page-scroll" href="#access"><span translate="NAV_TITLE_ACCESS"></span></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact" data-i18n="common.contact">Contact</a>
+                        <a class="page-scroll" href="#contact"><span translate="NAV_TITLE_CONTACT"></span></a>
                     </li>
                 </ul>
             </div>
@@ -95,11 +90,11 @@
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+	<section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading" data-i18n="common.about">About</h2>
+                    <h2 class="section-heading"><span translate="SECTION_ABOUT_TITLE"></span></h2>
                     <hr class="light">
                 </div>
             </div>
@@ -107,8 +102,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-justify">
-                    <p class="text-faded" data-i18n="common.about-description-line1">Un restaurant a ouvert depuis premier avril 2016.</p>
-                    <p class="text-faded" data-i18n="common.about-description-line2">Le restaurant s'appelle Neuf Barre.</p>
+                    <p class="text-faded"><span translate="SECTION_ABOUT_DESC_LINE_1"></span></p>
+                    <p class="text-faded"><span translate="SECTION_ABOUT_DESC_LINE_2"></p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <div id="typed-intro"></div>    
@@ -124,7 +119,7 @@
         <div class="container menu-button">
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <a href="#menu" class="page-scroll btn btn-default btn-xl sr-button">Voir le menu</a>
+                    <a href="#menu" class="page-scroll btn btn-default btn-xl sr-button"><span translate="BUTTON_LINK_MENU">Voir le menu</span></a>
                 </div>
             </div>
         </div>
@@ -136,7 +131,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading" data-i18n="common.menu">Menu</h2>
+                    <h2 class="section-heading"><span translate="SECTION_MENU_TITLE"></span></h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -146,28 +141,28 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="menu-box">
                         <i class="fa fa-4x fa-coffee text-primary sr-icons"></i>
-                        <h3 data-i18n="common.menu-breakfast-title">Sturdy Templates</h3>
+                        <h3><span translate="SECTION_MENU_BREAKFAST_TITLE"></span></h3>
                         <p class="text-muted">Menu du matin</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="menu-box">
                         <i class="fa fa-4x fa-cutlery text-primary sr-icons"></i>
-                        <h3 data-i18n="common.menu-lunch-title">Ready to Ship</h3>
+                        <h3><span translate="SECTION_MENU_LUNCH_TITLE"></span></h3>
                         <p class="text-muted">Menu du midi</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="menu-box">
                         <i class="fa fa-4x fa-beer text-primary sr-icons"></i>
-                        <h3 data-i18n="common.menu-diner-title">Up to Date</h3>
+                        <h3><span translate="SECTION_MENU_DINER_TITLE"></span></h3>
                         <p class="text-muted">Menu du soir</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="menu-box">
                         <i class="fa fa-4x fa-glass text-primary sr-icons"></i>
-                        <h3 data-i18n="common.menu-drink-title">Made with Love</h3>
+                        <h3><span translate="SECTION_MENU_DRINK_TITLE"></span></h3>
                         <p class="text-muted">Boire avec amour !</p>
                     </div>
                 </div>
@@ -179,7 +174,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading" data-i18n="common.gallery">Galerie</h2>
+                    <h2 class="section-heading"><span translate="SECTION_GALLERY_TITLE"></span></h2>
                     <hr class="light">
                 </div>
             </div>
@@ -207,7 +202,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading" data-i18n="common.access">Access</h2>
+                    <h2 class="section-heading"><span translate="SECTION_ACCESS_TITLE"></span></h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -233,10 +228,16 @@
                     </div>
                     <div class="col-lg-4 text-center">
                         <i class="fa fa-home fa-3x sr-contact"></i>
-                        <p data-i18n="common.access-address-line1">〒153-0064 - Tokyo</p>
-                        <p data-i18n="common.access-address-line2">2 Chome-21-28 Shimomeguro Meguro</p>
-                        <p class="text-muted"><span data-i18n="common.access-hours-label"></span><span data-i18n="common.access-hours-value"></span></p>
-                        <p class="text-muted"><span data-i18n="common.access-holidays-label"></span><span data-i18n="common.access-holidays-value"></span></p>
+                        <p><span translate="SECTION_ACCESS_ADDRESS_LINE_1"></span></p>
+                        <p><span translate="SECTION_ACCESS_ADDRESS_LINE_2"></span></p>
+                        <p class="text-muted">
+                          <span translate="SECTION_ACCESS_HOURS_LABEL"></span>
+                          <span translate="SECTION_ACCESS_HOURS_VALUE"></span>
+                        </p>
+                        <p class="text-muted">
+                          <span translate="SECTION_ACCESS_HOLIDAYS_LABEL"></span>
+                          <span translate="SECTION_ACCESS_HOLIDAYS_VALUE"></span>
+                        </p>
                     </div>
                     <div class="col-lg-4 text-center">
                         <i class="fa fa-envelope-o fa-3x sr-contact"></i>
@@ -271,7 +272,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading" data-i18n="common.contact">Formulaire de contact</h2>
+                    <h2 class="section-heading"><span translate="SECTION_CONTACT_TITLE"></span></h2>
                     <hr class="light">
                 </div>
             </div>
@@ -283,19 +284,19 @@
                         <form id="contactForm" class="form">
                             
                             <p class="Name">
-                                <input id="name" name="name" text="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="{{ 'common.contact-name' | i18n }}"  />
+                                <input id="name" name="name" text="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="{{ 'SECTION_CONTACT_NAME' | translate }}"  />
                             </p>
 
                             <p class="email">
-                                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="{{ 'common.contact-email' | i18n }}" />
+                                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="{{ 'SECTION_CONTACT_EMAIL' | translate }}" />
                             </p>
 
                             <p class="text">
-                            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="{{ 'common.contact-comment' | i18n }}"></textarea>
+                            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="{{ 'SECTION_CONTACT_COMMENT' | translate }}"></textarea>
                           </p>
 
                           <div class="submit">
-                            <input type="submit" value="{{ 'common.contact-sendLabel' | i18n }}" id="button-blue"/>
+                            <input type="submit" value="{{ 'SECTION_CONTACT_SEND_LABEL' | tranlate }}" id="button-blue"/>
                             <div class="ease"></div>
                           </div>
 
@@ -317,6 +318,9 @@
         </div>
     </footer>
 
+
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -325,26 +329,31 @@
 
     <!-- Angular JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+    <!-- script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-touch.min.js"></script-->
 
     <!-- Plugin JavaScript -->
     <script src="js/angular/angular-cookies.js"></script>
     <script src="js/angular/angular-sanitize.js"></script>
-    <script src="js/angular/angular-localization.js"></script>
-    
+    <script src="js/angular/angular-translate.min.js"></script>
+    <script src="js/angular/angular-local-storage.min.js"></script>
+    <script src="js/angular/angular-translate-handler-log.min.js"></script>
+    <script src="js/angular/angular-translate-loader-static-files.min.js"></script>
+    <script src="js/angular/angular-translate-storage-local.min.js"></script>
+    <script src="js/angular/angular-translate-storage-cookie.min.js"></script>
+
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/slick.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/jquery.simpleWeather.js"></script>
 
+    <!--script src="js/typed.js"></script -->
+    <script src="js/photoswipe.js"></script>
+    <script src="js/photoswipe-ui-default.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/creative.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/neuf-barre.js"></script>
+
+    <script src="js/miyalolo.js"></script>
 
 </body>
 
