@@ -69,7 +69,7 @@ p {
   margin-top: 20px;
 }
 section {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 aside {
   /* padding: 50px 0; */
@@ -166,7 +166,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../images/body-bg-paris.jpg');
+  background-image: url('../img/banner.png');
   /*background-color: #000;*/
   text-align: center;
   color: white;

@@ -1,42 +1,28 @@
 <!DOCTYPE html>
-<html lang="jp" ng-app="neufbarre">
+<html lang="fr">
 
-<head>
-
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Neuf barre</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <title>Neuf Barre</title>
+    <meta name="description" content="Neuf Barre restaurant meguro">
+    <meta name="keywords" content="NeufBarre restaurant meguro">
+    
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/photoswipe.css" type="text/css">
     <link rel="stylesheet" href="css/default-skin/default-skin.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/creative.css">
+  </head>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top" ng-controller="MainCtrl">
-
+  <body id="page-top">
+    <!--banner-->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,9 +36,9 @@
 
                 <a class="navbar-brand page-scroll" href="#page-top"><span translate="MENU_TITLE">Neuf Barre</span></a>
                 <div class="locales-flags">
-                    <a ng-click="changeLanguage('ja')" href=""><img width="32" height="32" src="images/flags/japanese-icon.png" alt="JP" title="日本語" /></a>
-                    <a ng-click="changeLanguage('fr')" href=""><img width="32" height="32" src="images/flags/french-icon.png" alt="FR" title="Français" /></a>
-                    <a ng-click="changeLanguage('en')" href=""><img width="32" height="32" src="images/flags/english-icon.png" alt="FR" title="English" /></a>
+                    <a ng-click="changeLanguage('ja')" href=""><img width="32" height="32" src="img/flags/japanese-icon.png" alt="JP" title="日本語" /></a>
+                    <a ng-click="changeLanguage('fr')" href=""><img width="32" height="32" src="img/flags/french-icon.png" alt="FR" title="Français" /></a>
+                    <a ng-click="changeLanguage('en')" href=""><img width="32" height="32" src="img/flags/english-icon.png" alt="FR" title="English" /></a>
                 </div>
             </div>
 
@@ -60,19 +46,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about"><span translate="NAV_TITLE_ABOUT"></span></a>
+                        <a class="page-scroll" href="#concept"><span translate="NAV_TITLE_ABOUT">Concept</span></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#menu"><span translate="NAV_TITLE_MENU"></span></a>
+                        <a class="page-scroll" href="#event"><span translate="NAV_TITLE_MENU">Événement</span></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#gallery"><span translate="NAV_TITLE_GALLERY"></span></a>
+                        <a class="page-scroll" href="#menu"><span translate="NAV_TITLE_GALLERY"></span>Menu</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#access"><span translate="NAV_TITLE_ACCESS"></span></a>
+                        <a class="page-scroll" href="#access"><span translate="NAV_TITLE_ACCESS">Réservation &amp; Accès</span></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact"><span translate="NAV_TITLE_CONTACT"></span></a>
+                        <a class="page-scroll" href="#about"><span translate="NAV_TITLE_ABOUT">À propos</span></a>
                     </li>
                 </ul>
             </div>
@@ -89,93 +75,237 @@
             </div>
         </div>
     </header>
-
-	<section class="bg-primary" id="about">
+    <!-- / banner -->
+    <!--about-->
+    <section id="concept" class="bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading"><span translate="SECTION_ABOUT_TITLE"></span></h2>
+                    <h1 class="header-h">Neuf Barre</h1>
                     <hr class="light">
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="row">
-                <div class="col-lg-8 text-justify">
-                    <p class="text-faded"><span translate="SECTION_ABOUT_DESC_LINE_1"></span></p>
-                    <p class="text-faded"><span translate="SECTION_ABOUT_DESC_LINE_2"></p>
+                <div class="col-md-12 text-center marb-35">
+                    <p class="header-p">Neuf Barre est un restaurant de cuisine originale
+                    <br>situé à côté de Meguro.</p>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <div id="typed-intro"></div>    
-                </div>
-                <!--
-                    <div class="col-lg-4 center">
-                        <div id="weather"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="about-info">
+                            <h2 class="heading">Le concept</h2>
+                            <p>Ouvert depuis avril 2016, Neuf Barre est un restaurant situé à Meguro.</p>
+                            <p>Venez vous relaxer dans un cadre agréable et profitez de la compagnie de la restauratrice.</p>
+                            <div class="details-list">
+                                <ul>
+                                    <li><i class="fa fa-check"></i>Cuisine japonaise</li>
+                                    <li><i class="fa fa-check"></i>Cuisine occidentale</li>
+                                    <li><i class="fa fa-check"></i>Bar à vin</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                -->
+                    <div class="col-md-6 col-sm-6">
+                        <img src="img/event.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
-
-        <div class="container menu-button">
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <a href="#menu" class="page-scroll btn btn-default btn-xl sr-button"><span translate="BUTTON_LINK_MENU">Voir le menu</span></a>
+    </section>
+    <!--/about-->
+    <!-- event -->
+    <section id="event">
+        <div class="bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="header-h">Événement à venir</h1>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center" style="padding:60px;">
+                      <p class="header-p">Soirée anniversaire du restaurant !</p>
+                    </div>
+                    <div class="col-md-12" style="padding-bottom:60px;">
+                        <div class="item active left">
+                          <div class="col-md-6 col-sm-6 left-images">
+                           <img src="img/event.jpg" class="img-responsive">
+                         </div>
+                         <div class="col-md-6 col-sm-6 details-text">
+                          <div class="content-holder">
+                            <h2>Neuf Barre fête ses 1 an !</h2>
+                            <p>Venez célébrer les 1 an de Neuf Barre. A cette occasion, la maîtresse de maison a préparée un menu spécial de célébration.</p>
+                            <address>
+                              <strong>Place: </strong>
+                              Neuf Barre
+                              <br>
+                              <strong>Time: </strong>
+                              à partir de 19h
+                            </address>
+                            <a class="btn btn-imfo btn-read-more" href="events-details.html">En savoir plus</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        
     </section>
-
+    <!--/ event -->
+    <!-- menu -->
     <section id="menu">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading"><span translate="SECTION_MENU_TITLE"></span></h2>
+                    <h1 class="header-h">Menu</h1>
                     <hr class="primary">
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="menu-box">
-                        <i class="fa fa-4x fa-coffee text-primary sr-icons"></i>
-                        <h3><span translate="SECTION_MENU_BREAKFAST_TITLE"></span></h3>
-                        <p class="text-muted">Menu du matin</p>
-                    </div>
+                <div class="col-md-12 text-center marb-35">
+                    <p class="header-p">Veuillez trouver ci-dessous une liste non exhaustive de ce que Neuf Barre vous propose</p>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="menu-box">
-                        <i class="fa fa-4x fa-cutlery text-primary sr-icons"></i>
-                        <h3><span translate="SECTION_MENU_LUNCH_TITLE"></span></h3>
-                        <p class="text-muted">Menu du midi</p>
-                    </div>
+                <div class="col-md-12  text-center gallery-trigger">
+                    <ul class="list-inline">
+                        <li class="col-md-3 col-xs-3 filter" data-filter=".category-1">
+                            <i class="fa fa-2x fa-coffee text-primary sr-icons"></i>
+                            <h3><span translate="SECTION_MENU_BREAKFAST_TITLE"></span></h3>
+                            <p class="text-muted">Petit Déj</p>
+                        </li>
+                        <li class="col-md-3 col-xs-3 filter" data-filter=".category-2">
+                            <i class="fa fa-2x fa-cutlery text-primary sr-icons"></i>
+                            <h3><span translate="SECTION_MENU_LUNCH_TITLE"></span></h3>
+                            <p class="text-muted">Déjeuner</p>
+                        </li>
+                        <li class="col-md-3 col-xs-3 filter" data-filter=".category-3">
+                            <i class="fa fa-2x fa-beer text-primary sr-icons"></i>
+                            <h3><span translate="SECTION_MENU_DINER_TITLE"></span></h3>
+                            <p class="text-muted">Dîner</p>
+                        </li>
+                        <li class="col-md-3 col-xs-3 filter" data-filter="all">
+                            <i class="fa fa-2x fa-glass text-primary sr-icons"></i>
+                            <h3><span translate="SECTION_MENU_DRINK_TITLE"></span></h3>
+                            <p class="text-muted">Boisson</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="menu-box">
-                        <i class="fa fa-4x fa-beer text-primary sr-icons"></i>
-                        <h3><span translate="SECTION_MENU_DINER_TITLE"></span></h3>
-                        <p class="text-muted">Menu du soir</p>
+                <div id="Container">
+                    <div class="mix category-1 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="menu-box">
-                        <i class="fa fa-4x fa-glass text-primary sr-icons"></i>
-                        <h3><span translate="SECTION_MENU_DRINK_TITLE"></span></h3>
-                        <p class="text-muted">Boire avec amour !</p>
+                    <div class="mix category-1 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-1 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-1 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-2 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-2 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-2 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-2 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-3 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-3 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-3 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
+                    </div>
+                    <div class="mix category-3 menu-restaurant" data-myorder="2">
+                        <span class="clearfix">
+                        <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Nom de plat</a>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">400円</span>
+                      </span>
+                      <span class="menu-subtitle">Description de plat</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--/ menu -->
 
-    <section class="" id="gallery">
+    <section id="gallery">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading"><span translate="SECTION_GALLERY_TITLE"></span></h2>
+                    <h1 class="header-h">Galerie</h1>
+                    <!--h2 class="section-heading"><span translate="SECTION_GALLERY_TITLE">Galerie</span></h2-->
                     <hr class="light">
+
+                    <div id="launchGallery" class="col-md-12 col-sm-6">
+                        <img src="img/gallery/12912323_1721979441419430_1955389715_n.jpg" alt="" class="img-responsive">
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,14 +314,78 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="frecchou">
-                        <div><img src="img/portfolio/thumbnails/neuf_barre_1.jpg" /></div>
-                        <div><img src="img/portfolio/thumbnails/neuf_barre_2.jpg" /></div>
-                        <div><img src="img/portfolio/thumbnails/neuf_barre_3.jpg" /></div>
-                        <div><img src="img/portfolio/thumbnails/neuf_barre_4.jpg" /></div>
-                        <div><img src="img/portfolio/thumbnails/neuf_barre_5.jpg" /></div>
-                        <div><img src="img/portfolio/thumbnails/neuf_barre_6.jpg" /></div>
-                        <div><img src="img/portfolio/thumbnails/neuf_barre_7.jpg" /></div>                        
+
+                  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                    <!-- Background of PhotoSwipe.
+                         It's a separate element as animating opacity is faster than rgba(). -->
+                    <div class="pswp__bg"></div>
+
+                    <!-- Slides wrapper with overflow:hidden. -->
+                    <div class="pswp__scroll-wrap">
+
+                        <!-- Container that holds slides.
+                            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                            Don't modify these 3 pswp__item elements, data is added later on. -->
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
+
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                        <div class="pswp__ui pswp__ui--hidden">
+
+                            <div class="pswp__top-bar">
+
+                                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                                <div class="pswp__counter"></div>
+
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                                <!-- element will get class pswp__preloader--active when preloader is running -->
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                      <div class="pswp__preloader__cut">
+                                        <div class="pswp__preloader__donut"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip"></div>
+                            </div>
+
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                            </button>
+
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                            </button>
+
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+          </div>
+      </div>
+                        
                     </div>
                 </div>
             </div>
@@ -202,7 +396,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading"><span translate="SECTION_ACCESS_TITLE"></span></h2>
+                    <h1 class="header-h">Accès &amp; Réservation</h1>
+                    <!--h2 class="section-heading"><span translate="SECTION_ACCESS_TITLE"></span></h2-->
                     <hr class="primary">
                 </div>
             </div>
@@ -219,67 +414,40 @@
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                
                 <hr class="primary">
-                <div class="row">
-                    <div class="col-lg-4 text-center">
-                        <i class="fa fa-phone fa-3x sr-contact"></i>
-                        <p>03-3495-9788</p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <i class="fa fa-home fa-3x sr-contact"></i>
-                        <p><span translate="SECTION_ACCESS_ADDRESS_LINE_1"></span></p>
-                        <p><span translate="SECTION_ACCESS_ADDRESS_LINE_2"></span></p>
-                        <p class="text-muted">
-                          <span translate="SECTION_ACCESS_HOURS_LABEL"></span>
-                          <span translate="SECTION_ACCESS_HOURS_VALUE"></span>
-                        </p>
-                        <p class="text-muted">
-                          <span translate="SECTION_ACCESS_HOLIDAYS_LABEL"></span>
-                          <span translate="SECTION_ACCESS_HOLIDAYS_VALUE"></span>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                        <p><a href="mailto:neuf.barre@gmail.com">neuf.barre@gmail.com</a></p>
-                    </div>
-                </div>
 
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/Neuf-Barre-%E3%83%8C%E3%83%95%E3%83%90%E3%83%BC-1025144697539304/?fref=ts"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://www.imgrum.net/user/neuf_barre/2997403498"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-download fa-fw fa-3x"></i></a>
-                            </li>
-                        </ul>
+                <div class="col-md-12 text-center">
+                    <h1 class="header-h">Réserver une table</h1>
+                    <p class="header-p">Merci ce remplir le formulaire ci-dessous 
+                    <br> afin de réserver une table </p>
+                </div>
+            </div>
+            <div class="row msg-row">
+                <div class="col-md-4 col-sm-4 mr-15">
+                    <div class="media-2">
+                        <div class="media-left">
+                            <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="dark-blue regular">Phone Numbers</h4>
+                            <p class="light-blue regular alt-p">+440 875369208 - <span class="contacts-sp">Phone Booking</span></p>
+                        </div>
+                    </div>
+                    <div class="media-2">
+                        <div class="media-left">
+                            <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="dark-blue regular">Opening Hours</h4>
+                            <p class="light-blue regular alt-p"> Monday to Friday 09.00 - 24:00</p>
+                            <p class="light-blue regular alt-p">
+                                 Friday and Sunday 08:00 - 03.00
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <!--a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download business card</a-->
-            </div>
-        </div>
-    </aside>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-heading"><span translate="SECTION_CONTACT_TITLE"></span></h2>
-                    <hr class="light">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-md-8 col-sm-8">
                     <div id="contactFormDiv">
                         <form id="contactForm" class="form">
                             
@@ -300,61 +468,86 @@
                             <div class="ease"></div>
                           </div>
 
+                          <div class="col-md-12 btnpad">
+                        <div class="contacts-btn-pad">
+                            <button class="contacts-btn">Book Table</button>
+                        </div>
+                    </div>
+
                         </form>
 
                     </div>
-
                     
+                    </form>
+                </div>
+            </div>
+
             </div>
         </div>
-    </section>
+    </aside>
 
-    <footer class="bg-dark">
-        <div class="row">
-            <div class="col-lg-8 text-center"></div>
-            <div class="col-lg-4 text-center">
-                <p>Copyright @ Neuf Barre 2017</p>
+    <!-- footer -->
+    <footer class="footer text-center">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 text-center">
+                    <div class="widget">
+                        <h4 class="widget-title">Neuf Barre</h4>
+                        <address>Quelque part<br>à Meguro</address>
+                        <div class="row"><!-- social-list -->
+                            <div class="col-lg-12 text-center">
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="https://www.facebook.com/Neuf-Barre-%E3%83%8C%E3%83%95%E3%83%90%E3%83%BC-1025144697539304/?fref=ts"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.imgrum.net/user/neuf_barre/2997403498"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-download fa-fw fa-3x"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                <!--a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download business card</a-->
+                        <p class="copyright clear-float">
+                            2017 © Neuf Barre
+                            <div class="credits">
+                                Designed by <a href="https://bootstrapmade.com/">Loïc Belleteste</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-
-
-
-
+    <!-- / footer -->
+    
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Angular JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
-    <!-- script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-touch.min.js"></script-->
+    <script src="js/jquery.mixitup.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/angular/angular-cookies.js"></script>
-    <script src="js/angular/angular-sanitize.js"></script>
-    <script src="js/angular/angular-translate.min.js"></script>
-    <script src="js/angular/angular-local-storage.min.js"></script>
-    <script src="js/angular/angular-translate-handler-log.min.js"></script>
-    <script src="js/angular/angular-translate-loader-static-files.min.js"></script>
-    <script src="js/angular/angular-translate-storage-local.min.js"></script>
-    <script src="js/angular/angular-translate-storage-cookie.min.js"></script>
-
+    
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
 
-    <!--script src="js/typed.js"></script -->
     <script src="js/photoswipe.js"></script>
     <script src="js/photoswipe-ui-default.js"></script>
 
     <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
     <script src="js/creative.js"></script>
-
-    <script src="js/miyalolo.js"></script>
-
+    <!--script src="contactform/contactform.js"></script-->
+    
 </body>
-
 </html>
